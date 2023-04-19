@@ -76,15 +76,17 @@ justify-content: center;
 position: relative;
 background:  #F7F7F7;
 height: 500px;
+
 }
-.titre-présetation{
-width: 100%;
+.titre-présentation{
+width: 275px;
 height: 68px;
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
 text-align: center;
-
+padding-top: 30px ;
+margin-bottom: 0px;
 }
 .soutitre-présentation{
 width: 100%;
@@ -94,6 +96,7 @@ font-weight: 300;
 line-height: 21px;
 text-align: center;
 justify-self: center;
+margin-top:0px;
 }
 .botton-présentation{
 width: 218px;
@@ -128,12 +131,14 @@ margin-left: 50px;
  height: 440px;
  justify-content: space-between;
 }
+
 .titre-fonctionnement{
 width: 100%;
 height: 31px;
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
+padding: 20px 0px 0px 10px;
 }
 
 .element{
@@ -179,7 +184,7 @@ width: 100%;
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
-padding-top: 20px;
+padding: 30px 0px 0px 10px;
 }
 .card-restaurants{
 display: flex;
@@ -301,6 +306,7 @@ align-self: flex-start;
 .lis > i{
 padding-right: 8px;
 }
-.liste2 >p.a {
+.liste2 > a {
   text-decoration:none;
+  color: #FFFFFF;
 }
