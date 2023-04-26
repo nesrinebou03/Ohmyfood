@@ -19,11 +19,16 @@ body{
   width:320px;
 position: relative;
 }
-.retour{ 
+.head{
+  position: relative;
+}
+.retour { 
 display: flex;
 justify-self: end;
 width: 40%;
-
+position: absolute;
+left: 10px;
+top:10px;
 }
 .logo{
       font-size:30px;
@@ -41,18 +46,18 @@ width: 40%;
   }
  header > img  {
     width: 100%;
-object-fit:cover;
-height: 250px;
-
- }
- 
+  object-fit:cover;
+  height: 250px;
+  }
  
  .carte-menu{
     background: #F7F7F7;
     width: 320px;
     height: 68%;
     border-radius: 25px 25px 0px 0px ;
-    margin-top: 0px;
+    margin-top: -40px;
+    padding-top: -50px;
+    position: relative;
  }
 .menu-restaurant{
     display: flex;
@@ -161,7 +166,9 @@ margin: 0px;
   color: #F7F7F7;
   height: 70px;
   border-radius: 0px 15px 15px 0px;
+  display:inline;
 }
+
 
 .botton{
 width: 170px;
@@ -231,12 +238,16 @@ padding:14px 0px 0px 40px ;
   .lis > .list2{
     margin-left: 6px;
   }
+  .list1 > a {
+    text-decoration:none;
+    color: #FFFFFF;
+  }
   .list2 > a {
     text-decoration:none;
     color: #FFFFFF;
   }
   /** Desktop**/
-  @media (min-width:768px) and (max-width:1440px) {
+  @media (min-width:768px) {
 
   body{
     max-width: 1440px;
@@ -288,7 +299,7 @@ margin-left: 170px;
 }
 
 .botton{
-  margin:20px 0px 20px 0px;
+  margin:30px 0px 70px 0px;
 }
 
 .text-botton{
@@ -304,6 +315,7 @@ margin-left: 170px;
   justify-content: flex-end;
 padding:20px 0px ;
 position: relative;
+
 }
 .logo-footer{
 
@@ -345,6 +357,143 @@ margin-left: 10px
 padding-left: 16px;
 
 }
+.list1 > a{
+  text-decoration:none;
+  color: #FFFFFF;
+}
+.list2 > a {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+}
+@media (min-width:768px) and (max-width:1023.99px){
+
+
+  body{
+    max-width: 1023.99px;
+display: flex;
+  }
+  .main-container{
+    max-width: 1023.99px;
+   height: 100%;
+ 
+
+  }
+  .header{
+   width: 100%;
+  }
+
+header >.img{
+  width: 1024px;
+
+}
+.carte-menu{
+  width: 900px;
+  display: flex;
+justify-content: center;
+flex-direction: column;
+align-items:center;
+margin-left: 50px;
+
+}
+.menu-restaurant{
+  justify-content: center;
+}
+.title{
+  width: 280px;
+}
+.plats{
+  width: 634px;
+
+}
+.contenu{
+  justify-content: center;
+}
+.nom-de-plat{
+  width:100% ;
+}
+.ingredients{
+  width: 100%;
+}
+.euro{
+  justify-content: end;
+}
+
+.botton{
+  margin:20px 0px 20px 0px;
+}
+
+.text-botton{
+  padding:0px 0px 0px 40px ;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  width:1023.99px;
+  height: 114px;
+  align-items: flex-end;
+  justify-content: flex-end;
+padding:20px 0px ;
+position: relative;
+}
+.logo-footer{
+
+position: absolute;
+left: 85%;
+right: 1.02%;
+top: 53%;
+bottom: 0%;
+}
+.contenu-footer{
+  display: flex;
+  flex-direction: row;
+ position: absolute;
+ left: 5%;
+right: 10%;
+top: 45%;
+bottom: 0%;
+
+}
+.list1{
+  display: flex;
+  flex-direction: row;
+padding-right: 10px;
+margin-right: 10px;
+}
+
+.list2{
+  display: flex;
+  flex-direction:row;
+  justify-items: center;
+  padding-left: 10px;
+margin-left: 10px
+
+}
+.lis{
+  padding-left: 0px;
+  display: flex;
+padding-left: 16px;
+
+}
+.list1 > a{
+  text-decoration:none;
+  color: #FFFFFF;
+}
+.list2 > a {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
 
 
 }
