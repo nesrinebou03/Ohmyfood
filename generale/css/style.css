@@ -360,13 +360,13 @@ margin-left: 12px;
 @media (min-width:768px) and (max-width:1440px) {
   body{
     max-width: 1440px;
-overflow-x: hidden;
+
   }
   .main-container{
     max-width: 1440px;
    height: 100%;
  position: relative;
- overflow-x: hidden;
+
   }
   .header{
     width: 100%;
@@ -424,8 +424,9 @@ gap : 60px;
 row-gap: 30px;
 }
 .restaurant{
- 
+ align-items: center;
   margin-top: 40px  ;
+  
 }
 .card-restaurants{
   margin-left: 250px;
