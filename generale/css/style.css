@@ -4,38 +4,71 @@ body{
       display: flex;
    justify-content: center;
    overflow-x: hidden;
-   box-sizing: border-box;
-   margin: 0 auto;
+   margin: auto;
+ 
 }
 .main-container
-{
-      max-width:320px;    
-}
+{margin:  0 auto;
+      max-width:320px; 
+         box-sizing: border-box;
+}  
 *{ 
   font-family: Roboto;
 }
-.spinner{
+.spinner-loader{
   position: fixed;
   inset: 0;
-width: 100vw;
-height: 100vh;
+  display: grid;
+  place-items: center;
+width: 100%;
+height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-background: #353535;
+background: #EAEAEA;
 z-index: 1;
 opacity: 0.9;
-animation: spinnerloader 1s forwards;
-
-}
-@keyframes spinnerloader{
-  0%{
-    transform: scale(1);
-  }
-  100%{
+animation-duration: 2.5s;
+animation: spinnerloader 1s 2.5s forwards;
+} 
+@keyframes spinnerloader{ 
+  to{
     transform: scale(0);
   }
 }
+
+.spinner{
+  display: flex;
+  justify-content: center;
+margin: 50px auto;
+}
+.spinner div{
+  width: 20px;
+  height: 20px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: up-and-down;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.spinner .two{
+animation-delay: 0.3s;
+background-color: #008766;
+}
+.spinner .three{
+  animation-delay: 0.6s;
+  background-color: #FF79DA;
+}
+
+@keyframes up-and-down{
+  to {
+    opacity: 0.2;
+    transform: translateY(-20px);
+  }
+}
+
 /**Header**/
 .header{
   width:320px;
@@ -92,23 +125,22 @@ animation: spinnerloader 1s forwards;
 
 }
 /**presentation**/
-.présentation{
-display: flex;
+.Présentation{
 justify-content: center;
-position: relative;
-background:  #F7F7F7;
-height: 500px;
-
+background-color: #F7F7F7;
+margin-top: 0px;
+padding-bottom: 40px;
+width: 100%;
 }
 .titre-présentation{
-width: 275px;
+width: 100%;
 height: 68px;
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
 text-align: center;
 padding-top: 30px ;
-margin-bottom: 0px;
+margin: 0px 0px;
 }
 .soutitre-présentation{
 width: 100%;
@@ -118,7 +150,7 @@ font-weight: 300;
 line-height: 21px;
 text-align: center;
 justify-self: center;
-margin-top:0px;
+margin:10px 0px 10px 0px;
 }
 .botton-présentation{
 width: 218px;
@@ -129,6 +161,7 @@ box-shadow: 0px 4px  10px rgba(0, 0, 0, 0.25);
 position: relative;
 justify-self: center;
 margin-left: 50px;
+
 }
 .botton-présentation:hover{
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%) ;
@@ -218,7 +251,7 @@ display: flex;
 justify-content: space-between;
 }
 .restaurant{
-background: #EAEAEA ;
+background-color: #F7F7F7 ;
 width: 100%;
 padding-bottom:  80px  ;
 }
@@ -265,7 +298,9 @@ justify-content: space-between;
 }
 .text-restaurant{
 align-self: flex-start;
-
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
 
 }
 .titre-card{
@@ -327,7 +362,7 @@ align-self: flex-start;
 .icon-card:hover .fa-solid.fa-heart{
   display: inline;
 }
-
+ 
 .footer{
   display: flex;
   flex-direction: column;
@@ -336,6 +371,7 @@ align-self: flex-start;
   width: 270px;
   background: #353535;
   position: relative;
+
 }
 .logo-footer{
     font-size:18px;
@@ -368,7 +404,7 @@ margin-left: 12px;
 .lis > .list2{
   margin-left: 6px;
 }
-.list1 > a{
+.list1 > a {
   text-decoration:none;
   color: #FFFFFF;
 }
@@ -378,17 +414,22 @@ margin-left: 12px;
 }
 
 
-
 /** Desktop**/
-@media (min-width:768px)  {
+@media (min-width:767.99px)  {
   body{
     max-width: 1440px;
-
-  }
+display: flex;
+box-sizing: border-box;
+margin: 0 auto;
+position: relative;
+}
   .main-container{
     max-width: 1440px;
    height: 100%;
- position: relative;
+  margin:0 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   }
   .header{
@@ -428,14 +469,15 @@ margin-left: 580px;
   display: flex;
   flex-direction: row;
 gap:20px;
-margin-left: 250px;
+
+justify-content: center;
 }
 .element{
 
 }
 .card-restaurants{
 display: grid;
-grid-template-columns: 490px 490px;
+grid-template-columns: 80% 80%;
 grid-template-rows : 251px  251px;
 gap : 60px;
 row-gap: 30px;
@@ -443,13 +485,17 @@ row-gap: 30px;
 .restaurant{
  align-items: center;
   margin-top: 40px  ;
-  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
 }
 .card-restaurants{
-  margin-left: 250px;
+ justify-content: center;
 }
 .titre-restaurant{
-  margin-left: 250px;
+ margin-left: 200px;
+
 }
 .carte{
 
@@ -461,12 +507,13 @@ height:251px;
 .footer{
   display: flex;
   flex-direction: row;
-  width:100%;
+  width:1440px;
   height: 114px;
   align-items: flex-end;
   justify-content: flex-end;
 padding:20px 0px ;
 position: relative;
+
 }
 .logo-footer{
 
@@ -508,19 +555,29 @@ margin-left: 10px
 padding-left: 16px;
 
 }
+.list1 > a{
+  text-decoration:none;
+  color: #FFFFFF;
+}
+.list2 > a {
+  text-decoration:none;
+  color: #FFFFFF;
+}
 
-
-
-
-
-
-
-
-
-
-
+ 
 
 }
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:768px) and (max-width:1024px)
 {
   
