@@ -110,7 +110,7 @@ body{
   flex-grow:0;
   padding-left:20px;
 }
- .localisation-contenu >.localisation-icon{
+.localisation-contenu >.localisation-icon{
   width:12px;
   height:16px;
   top:17px;
@@ -184,7 +184,6 @@ body{
   height:440px;
   justify-content:space-between;
 }
-
 .titre-fonctionnement{
   width:80%;
   height:31px;
@@ -606,6 +605,7 @@ body{
 nav{
   width:1024px;
 }
+
 .localisation-contenu{
   align-items:center;
   justify-content:center;
@@ -615,6 +615,9 @@ nav{
 }
 .titre-présentation{
   font-size:40px;
+}
+.soutitre-présentation{
+  font-size:14px;
 }
 .botton-présentation{
   justify-self:center;
