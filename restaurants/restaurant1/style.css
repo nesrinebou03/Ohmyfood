@@ -1,0 +1,153 @@
+/**General**/
+body{
+    max-width:767.98px;  
+      display: flex;
+   justify-content: center;
+   overflow-x: hidden;
+   box-sizing: border-box;
+   margin: 0 auto;
+}
+.main-container
+{
+      max-width:320px;    
+}
+*{ 
+  font-family: Roboto;
+}
+/**Header**/
+.header{
+  width:320px;
+}
+
+.logo{
+      font-size:30px;
+      font-family:shrikhand;
+      font-style:italic;
+      font-weight:400;
+      line-height:44px;
+      text-align:center;
+      color:black;
+      width: 162px;
+      height: 44px; 
+      justify-self:center; 
+      padding-left: 75px;
+  }
+.menu-restaurant{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon-card{
+    padding: 30px 20px 0px 0px;
+   width: 22px;
+   height: 21px;
+  }
+  .icon-card .fa-solid.fa-heart{
+    display: none;
+  }
+  .icon-card:hover {
+    background: linear-gradient(#9356dc 20%, #ff79da 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .icon-card:hover .fa-regular.fa-heart{
+    display: none;
+  }
+  .icon-card:hover .fa-solid.fa-heart{
+    display: inline;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px 25px;
+    width: 270px;
+    background: #353535;
+    position: relative;
+  }
+  .logo-footer{
+      font-size:18px;
+        font-family:shrikhand;
+        font-style:italic;
+        font-weight:400;
+        line-height:26px;
+        text-align:center;
+        color:#FFFFFF;
+        width: 137px;
+        height: 27px; 
+       padding-bottom: 30px;
+      position: absolute;
+      left: 0%;
+      right: 1.02%;
+      top: 0%;
+      bottom: 0%;
+  }
+  .contenu-footer{ 
+    padding: 25px 0px 10px 0px;
+    color: #FFFFFF;
+  }
+  .lis{
+    margin: 0px;
+    padding-top: 5px;
+  }
+  .lis > .list1{
+  margin-left: 12px;
+  }
+  .lis > .list2{
+    margin-left: 6px;
+  }
+  .list2 > a {
+    text-decoration:none;
+    color: #FFFFFF;
+  }
+  
