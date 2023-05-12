@@ -315,10 +315,10 @@ header > img{
 }
 .title{
   width:80%;
-  margin-left: 20%;
+  margin-left:10%;
 }
 .menu-restaurant > .icon-card{
-  margin-right :17%;
+  margin-right:10%;
 }
 .titre{
   margin-left:8%;
@@ -437,8 +437,12 @@ header > img{
   margin-left:20%;
   margin-right:20%;
 }
+.menu-restaurant > .icon-card{
+  margin-right:17%;
+}
 .title{
   width:80%; 
+  margin-left:20%;
 }
 .titre{
   margin-left:11%;
