@@ -114,6 +114,7 @@ body{
 }
 .plats{
   width:100%;
+  height: 68px;
   display:flex;
   flex-direction:row;  
   padding:0px;
@@ -129,11 +130,9 @@ body{
   position:relative;
   animation:menu 3.5s;
 }
-
 .description{
   display:flex;
   flex-direction:column;
-  justify-content:space-around;
   width:100%;
 }
 .nom-de-plat{
@@ -171,17 +170,15 @@ body{
 }
 .choix > i{
   position:absolute;
-  left:265px;
-  top:26px;
+  left:285px;
+  top:25px;
   width:10px;
-  height:10px;
 }
 .choix:hover{
   background-color:#99E2D0;
-  width:25%;
-  height:100%;
+  width:24%;
+  height:68px;
   color:#F7F7F7;
-  height:80px;
   border-radius:0px 15px 15px 0px;
   display:inline;
   transition-duration:0.3s;
@@ -196,7 +193,7 @@ body{
   background:linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow:0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius:25px;
-  margin:10% 0% 10% 22%;
+  margin:10% 0% 15% 22%;
   cursor:pointer;
 }
 .text-botton{
@@ -276,24 +273,6 @@ body{
   margin-left:0;
   justify-content:center;  
 }
-.choix:hover{
-  background-color:#99E2D0;
-  width:25%;
-  height:100%;
-  color:#F7F7F7;
-  height:80px;
-  border-radius:0px 15px 15px 0px;
-  display:inline;
-  transition-duration:0.3s;
-  transition-delay:0.2s;
-  transition-property:width;
-  transition-timing-function:linear;
-  margin-left:10px;
-}
-.choix > i{
-  margin-top:4px;
-  margin-left:40%;
-} 
 .head{ 
   width:768px; 
 }
@@ -326,10 +305,15 @@ header > img{
 .plats{
   width:84%;
   margin-left:8%;
+  height:76px;
 }
 .description{
   width:100%;
 }
+.choix > i{
+  margin-top:4px;
+  margin-left:37%;
+} 
 .contenu{
   justify-content:center;
 }
@@ -345,7 +329,7 @@ header > img{
   font-size:16px;
 }
 .choix:hover{
-  height:83px;
+  height:76px;
   width:15%;
 }
 .botton{
@@ -416,10 +400,6 @@ body{
   display:flex;
   margin-left:20%;
 }
-.choix > i{
-  margin-top:5px;
-  margin-left:52%;
-}
 
 header > img{
   width:100%;
@@ -449,7 +429,15 @@ header > img{
 }
 .plats{
   width:80%;
+  height:76px;
   margin-left:10%;
+}
+.choix > i{
+  margin-top:5px;
+  margin-left:49%;
+}
+.choix:hover{
+  height:76px;
 }
 .botton{
   margin-left:45%;
