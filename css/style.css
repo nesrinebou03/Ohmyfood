@@ -82,6 +82,7 @@ body{
   height:44px; 
   justify-self:center; 
   padding-left:75px;
+  margin-right: 40%;
 }
 .localisation{
   background-color:#EAEAEA;
@@ -157,6 +158,7 @@ body{
   justify-self:center;
   margin-left:50px;
   cursor:pointer;
+  margin-right: 40%;
 }
 .botton-présentation:hover{
   background:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%) ;
